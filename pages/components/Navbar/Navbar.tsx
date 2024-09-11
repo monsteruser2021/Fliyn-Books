@@ -48,7 +48,7 @@ const navbar = () => {
   return (
     <div className='shadow-md bg-white dark:bg-stone-900 dark:text-white duration-200 relative z-40'>
         {/*Upper Nav*/}
-        <div className='bg-primary/50 py-2'>
+        <div className='bg-primary/60 py-2'>
             <div className='container flex justify-between items-center'>
                 <div className='w-[10] '>
                     <a href="#"
@@ -65,7 +65,7 @@ const navbar = () => {
                         placeholder='Busqueda'
                         className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-400 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-white dark:bg-stone-900'
                         />
-                        <FaSearch className='text-white group-hover:text-primary absolute w-[1.5rem] top-1/2 -translate-y-1/2 right-3'/>
+                        <FaSearch className='text-black dark:text-white group-hover:text-primary absolute w-[1.5rem] top-1/2 -translate-y-1/2 right-3'/>
                     </div>
 
                     {/*Order button*/}
@@ -106,12 +106,12 @@ const navbar = () => {
                         className='transition-all duration-200 group-hover:rotate-180 stroke-white'/>
                         </span>
                     </a>
-                    <div className='absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black'>
+                    <div className='absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white dark:bg-stone-900 p-2 text-black dark:text-gray-200'>
                         <ul>
                             {DropdownLinks.map((data) =>(
                                 <li key={data.id}>
                                     <a href={data.link}
-                                    className='inline-block w-full rounded-md p-2 hover:bg-primary/20 shadow-md'
+                                    className='inline-block w-full rounded-md p-2 hover:bg-primary/20 dark:hover:bg-primary/40 shadow-md'
                                     >{data.name}</a>
                                 </li>
                             ))}

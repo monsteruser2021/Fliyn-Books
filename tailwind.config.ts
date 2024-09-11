@@ -23,8 +23,8 @@ module.exports = {
         ],
       },
       colors:{
-        primary: '#FF2929',
-        secondary: '#EE0000',
+        primary: '#f2116c',
+        secondary: '#ed616f',
       },
       container: {
         center: true,
