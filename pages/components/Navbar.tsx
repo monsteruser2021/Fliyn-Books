@@ -88,7 +88,9 @@ const navbar = () => {
             </div>
         </div>
         {/*Lower Nav*/}
-        <div className='flex justify-center'>
+        <div 
+        data-aos='zoom-in'
+        className='flex justify-center'>
             <ul className='font-lili sm:flex hidden items-center gap-4'>
                 {menu.map((data) => (
                     <li key={data.id}>

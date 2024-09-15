@@ -1,7 +1,7 @@
 import React from 'react';
-import Image1 from '../../assets/Showcase/books.png';
-import Image2 from '../../assets/Showcase/books2.png';
-import Image3 from '../../assets/Showcase/sale.png';
+import Image1 from '../assets/Showcase/books.png';
+import Image2 from '../assets/Showcase/books2.png';
+import Image3 from '../assets/Showcase/sale.png';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -54,13 +54,24 @@ const Hero = () => {
                 {ImageList.map((data) => (
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:columns-2'>
                             <div className='flex flex-col justify-center font-itim gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 mx-[2rem] mb-[2rem] relative z-10'>
-                                <h1 className='text-5xl sm:text-6xl lg:text-7xl'>
+                                <h1 
+                                data-aos='zoom-out'
+                                data-aos-duration='500'
+                                className='text-5xl sm:text-6xl lg:text-7xl'>
                                 {data.title}
                                 </h1>
-                                <p className='text-md'>
+                                <p 
+                                data-aos='fade-up'
+                                data-aos-duration='500'
+                                data-aos-delay='100'
+                                className='text-md'>
                                     {data.description}
                                 </p>
-                                <div>
+                                <div
+                                data-aos='fade-up'
+                                data-aos-duration='500'
+                                data-aos-delay='300'
+                                >
                                     <button
                                     className='bg-secondary/60 hover:scale-105 duration-200 text-black dark:text-white my-[1rem] py-2 px-4 rounded-full'>
                                         Order Now
@@ -68,7 +79,9 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className='order-1 sm:order-2'>
-                                <div className='relative z-10'>
+                                <div 
+                                data-aos='zoom-in'
+                                className='relative z-10'>
                                     <Image
                                     src={data.img}
                                     alt=''
