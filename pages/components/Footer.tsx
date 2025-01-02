@@ -9,7 +9,7 @@ const Footer = () => {
             <a href="#"
             className='font-nerko text-2xl sm:text-3xl '
             >
-                Flyin' Books
+                Flyin&apos; Books
             </a>
         </div>
         <div className='text-2xl gap-[1rem] flex items-end '>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-center pb-[1rem] '>
-        <p>Flyin' Books All Rights reserved.</p>
+        <p>Flyin&apos; Books All Rights reserved.</p>
       </div>
     </div>
   )

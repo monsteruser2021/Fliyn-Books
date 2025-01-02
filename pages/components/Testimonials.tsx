@@ -21,7 +21,7 @@ const TestimonialData = [
     img: "https://picsum.photos/104/104",
   },
   {
-    id: 5,
+    id: 4, // Changed id to 4 to ensure unique keys
     name: "Persona4",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: "https://picsum.photos/103/103",
@@ -29,7 +29,7 @@ const TestimonialData = [
 ];
 
 const Testimonials = () => {
-  var settings = {
+  const settings = { // Changed var to const
     dots: true,
     arrows: false,
     infinite: true,
@@ -72,10 +72,7 @@ const Testimonials = () => {
       <div className="container">
         {/* header section */}
         <div className="mb-0">
-          <h1
-            data-aos="fade-up"
-            className="text-center text-4xl"
-          >
+          <h1 data-aos="fade-up" className="text-center text-4xl">
             Testimonials
           </h1>
         </div>
@@ -84,15 +81,12 @@ const Testimonials = () => {
         <div data-aos="zoom-in">
           <Slider {...settings}>
             {TestimonialData.map((data) => (
-              <div className="my-20">
-                <div
-                  key={data.id}
-                  className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl bg-primary/40 relative"
-                >
+              <div key={data.id} className="my-20"> {/* Moved key prop here */}
+                <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl bg-primary/40 relative">
                   <div className="mb-4">
                     <img
                       src={data.img}
-                      alt=""
+                      alt={data.name} // Use the name as alt text for better accessibility
                       className="rounded-full w-20 h-20"
                     />
                   </div>
@@ -100,14 +94,10 @@ const Testimonials = () => {
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
                       <p className="text-xs">{data.text}</p>
-                      <h1 className="text-xl">
-                        {data.name}
-                      </h1>
+                      <h1 className="text-xl">{data.name}</h1>
                     </div>
                   </div>
-                  <p className="text-9xl font-serif absolute top-0 right-0">
-                    ,,
-                  </p>
+                  <p className="text-9xl font-serif absolute top-0 right-0">,,</p>
                 </div>
               </div>
             ))}

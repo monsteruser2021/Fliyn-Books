@@ -54,7 +54,7 @@ const navbar = () => {
                     <a href="#"
                     className='font-nerko text-2xl sm:text-3xl flex gap-2 mx-auto px-[1rem] '
                     >
-                        Flyin' Books
+                        Flyin&apos; Books
                     </a>
                 </div>
 
