@@ -78,7 +78,7 @@ const BestSellers = () => {
                             alt=''
                             className='h-[180px] w-[180px] object-cover bg-gray-100 px-[0.5rem] py-[0.5rem] border-black dark:border-white border-[0px] rounded-3xl '
                             />
-                            <div className='hidden top-[3.4rem] -translate-y-[4.1rem] w-[11rem] h-[11.2rem] group-hover:flex absolute text-center group-hover:backdrop-blur-md border-black border-[0px] rounded-3xl justify-center items-center'>
+                            <div className='hidden top-[3.37rem] md:top-[3.4rem] -translate-y-[4.1rem] md:w-[11.2rem] w-[10.7rem] h-[11.2rem] group-hover:flex absolute text-center group-hover:backdrop-blur-md border-black border-[0px] rounded-3xl justify-center items-center'>
                                 <button 
                                 className='cursor-pointer hover:scale-105 duration-300 rounded-full bg-primary/40 dark:text-black py-[0.3rem] px-[1rem] border-[0px] border-black relative z-10'>
                                 Add to cart
