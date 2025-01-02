@@ -16,11 +16,11 @@ const Store = () => {
                 <Image
                 src={lib}
                 alt=''
-                className='max-w-[400px] h-[350px] w-full mx-auto shadow-black dark:shadow-white shadow-xl shadow-offset-x-[10rem] object-cover rounded-2xl'
+                className='max-w-[400px] h-[350px] w-auto mx-auto shadow-black dark:shadow-white shadow-xl shadow-offset-x-[10rem] object-cover rounded-2xl'
                 />
               </div>
               {/*Text*/}
-              <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+              <div className='flex flex-col justify-center gap-6 sm:pt-0 mx-[1rem] '>
                 <h1 className='text-3xl sm:text-4xl'>
                   Library at your fingertips
                 </h1>

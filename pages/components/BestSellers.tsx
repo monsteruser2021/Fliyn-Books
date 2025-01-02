@@ -1,5 +1,12 @@
 import React from 'react'
 import book1 from '../assets/Best/book1.png'
+import book2 from '../assets/Best/book2.png'
+import book3 from '../assets/Best/book3.png'
+import book4 from '../assets/Best/book4.png'
+import book5 from '../assets/Best/book5.png'
+import book6 from '../assets/Best/book6.png'
+import book7 from '../assets/Best/book7.png'
+import book8 from '../assets/Best/book8.png'
 import Image from 'next/image'
 
 const ImageList = [
@@ -11,43 +18,43 @@ const ImageList = [
     },
     {
         id: 2,
-        img: book1,
+        img: book2,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
     {
         id: 3,
-        img: book1,
+        img: book3,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
     {
         id: 4,
-        img: book1,
+        img: book4,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
     {
         id: 5,
-        img: book1,
+        img: book5,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
     {
         id: 6,
-        img: book1,
+        img: book6,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
     {
         id: 7,
-        img: book1,
+        img: book7,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
     {
         id: 8,
-        img: book1,
+        img: book8,
         title: "Lorem, ipsum dolor.",
         price: "1$"
     },
@@ -59,7 +66,7 @@ const BestSellers = () => {
         <h1 className='text-6xl sm:5xl lg:7xl text-center pt-[3rem] pb-[1rem] '>Best Sellers</h1>
         <p className='text-md text-center text-stone-700 dark:text-gray-400 pb-[5rem] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt?</p>
         <div className='mb-100 mx-[1rem]'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center'>
+            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center'>
                 {ImageList.map((data)=> (
                     <div 
                     data-aos='fade-up'

@@ -5,6 +5,7 @@ import BestSellers from './components/BestSellers'
 import Store from './components/Banner'
 import AppBanner from './components/AppBanner'
 import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
@@ -46,6 +47,7 @@ AOS.refresh();
       <Store/>
       <AppBanner/>
       <Testimonials/>
+      <Footer/>
     </div>
   )
 }
